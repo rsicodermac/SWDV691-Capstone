@@ -1,0 +1,457 @@
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+html,button,input,select,textarea {
+color:#222;
+}
+html {
+font-size:1em;
+line-height:1.4;
+}
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+::-moz-selection {
+background: #b3d4fc;
+text-shadow: none;
+}
+::selection {
+background: #b3d4fc;
+text-shadow: none;
+}
+/*
+ * A better looking default horizontal rule
+ */
+hr {
+display: block;
+height: 1px;
+border: 0;
+border-top: 1px solid #ccc;
+margin: 1em 0;
+padding: 0;
+}
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+audio,canvas,img,video {
+vertical-align:middle;
+}
+/*
+ * Remove default fieldset styles.
+ */
+fieldset {
+border:0;
+margin:0;
+padding:0;
+}
+/*
+ * Allow only vertical resizing of textareas.
+ */
+textarea {
+resize:vertical;
+}
+
+/* ==========================================================================
+   Main styles
+   ========================================================================== */
+
+html{-webkit-tap-highlight-color: rgba(0,0,0,0);-webkit-user-select: none;-webkit-touch-callout:none; background:rgba(117, 117, 117, 0.685);}
+
+/*-- Percent Loader -- */
+#mainLoader{position:absolute; z-index:5; display:none; font-size:30px; line-height:30px; color:#fff; text-align:center; width:100%; font-family: 'Fredoka One', cursive;}
+
+/*-- Content Wrapper -- */
+#mainHolder{position:relative; width:100%;height:100%; display:none; background:rgb(117, 117, 117, 0.685);}
+#option{ position:absolute; right:0; z-index:5; margin:15px; width:7%; min-width:50px; }
+.buttonFullscreen, .buttonSound, .buttonExit{ margin:5px 0px;}
+.buttonSoundOn .soundOff{ display:block;}
+.buttonSoundOn .soundOn{ display:none;}
+.buttonSoundOff .soundOn{ display:block;}
+.buttonSoundOff .soundOff{ display:none;}
+
+.buttonOptionOn .optionOff{ display:block;}
+.buttonOptionOn .optionOn{ display:none;}
+.buttonOptionOff .optionOn{ display:block;}
+.buttonOptionOff .optionOff{ display:none;}
+
+.buttonIcon{ width:100%;}
+.fontLoader{font-family: 'Fredoka One', cursive; font-size:25px; line-height:25px; color:#fff;}
+
+/*-- Logo Wrapper -- */
+#logoHolder{display: table; position: absolute; height: 100%; width: 100%; color:#FFF; text-align:center;}
+
+#logoHolder #titleHolder{ position:relative; width:100%; height:100%; z-index:1; }
+#logoHolder #titleHolder .title{ position:absolute; width:100%; white-space: pre-line;}
+#logoHolder  #titleFixedHolder{ position:absolute; width:100%; height:100%; top:0; left:0; visibility:hidden;}
+#logoHolder  #titleFixedHolder .title{ position:absolute; width:100%;}
+#logoHolder .action{ position:absolute; top:60%; width:100%; }
+#logoHolder .preloadText{margin-top:10px;}
+#logoHolder .startImg{ width:15%; margin:auto; margin-top:10px;}
+
+/*-- Confirm Wrapper -- */
+#confirmHolder{ width:100%; height:100%; margin:auto; position:absolute; overflow: hidden; z-index:1000;}
+.confirmContent .message{ position:absolute; background:#9dc54f; width:50%; height:30%; left:25%; top:30%; text-align:center; -webkit-border-radius: 20px;-moz-border-radius: 20px;border-radius: 20px; color:#FFF; padding:5% 10%; box-shadow: 0px 8px rgba(0, 0, 0, .2);}
+.confirmContent .okImg{ position:absolute; width:20%; top:63%; left:29%;}
+.confirmContent .cancelImg{ position:absolute; width:20%; top:63%; right:29%;}
+.overlayBg{background:url(../assets/bg_pixel.png) repeat;}
+
+/*-- Loader Wrapper -- */
+#questionLoaderHolder{ width:100%; height:100%; margin:auto; position:relative; overflow: hidden; }
+#questionLoaderHolder svg{ width:20%; display:inline-block; margin:18% 45%; }
+
+
+/*-- Category Wrapper -- */
+#categoryHolder{ width:100%; height:100%; margin:auto; position:relative; overflow: hidden;}
+.categoryContent ul{ list-style:none; padding:0; margin:0; color:#FFF; width:80%; margin:auto; padding-top:5%;}
+.categoryContent li{ width:29%; float:left; margin:0 2%;}
+.categoryContent .categoryTitle{ padding:5%; text-align:center;}
+.categoryContent .nextImg{ position:absolute; width:5%; top:80%; right:44%;}
+.categoryContent .prevImg{ position:absolute; width:5%; top:80%; left:44%;}
+
+/*-- Question Wrapper -- */
+#gameHolder{ width:100%; height:100%; margin:auto; position:relative; overflow: hidden;}
+#gameStatus{ position:absolute; top:0; left:0; margin:15px; width:100%; height:100%;}
+#gameStatus .gameTotal{ position:absolute; top:0; left:0; width:12%;}
+#gameStatus .gameTimer{ position:absolute; top:0; left:41%; width:13%; text-align:center;}
+#gameStatus .gameAnswer{ position:absolute; bottom:10%; left:32.6%; width:30%; text-align:center;}
+#gameStatus .gameDisplay{ position:absolute; bottom:10%; left:32.6%; width:30%; text-align:center;}
+#gameStatus .gameReveal{ position:absolute; bottom:8%; left:38.8%; width:18%; text-align:center; cursor:pointer; z-index:2; }
+.gameQuestionStatus{ position:absolute; top:15%; text-align:center; color:#156976; width:100%;}
+.gameTimerStatus{ position:absolute; top:15%; text-align:center; color:#156976; width:100%; }
+.gameAnswerStatus{ position:absolute; top:20%; text-align:center; color:#156976; width:100%; }
+.gameDisplayStatus{ position:absolute; top:20%; text-align:center; color:#156976; width:100%; }
+
+#questionHolder{ position:relative; width:100%; height:100%; z-index:1; }
+#questionHolder .question{ position:absolute; width:100%; white-space: pre-line;}
+
+#questionFixedHolder{ position:absolute; width:100%; height:100%; top:0; left:0; visibility:hidden;}
+#questionFixedHolder .question{ position:absolute; width:100%;}
+
+#descriptionHolder{ position:absolute; width:100%; height:100%; top:0; left:0}
+#descriptionHolder .description{ position:absolute; width:100%;}
+
+#backgroundHolder{ position:absolute; width:100%; height:100%; top:0; left:0}
+#backgroundHolder .background{ position:absolute; width:100%;}
+
+#videoHolder{position:absolute; width:100%; height:100%; top:0; left:0}
+
+.draggable{ transition: text-shadow 1s ease, font-size 1s, color 1s; transform: scale(1); cursor:pointer; }
+
+/*-- Result Wrapper -- */
+#resultHolder{display: table; position: absolute; height: 100%; width: 100%;}
+.resultContent{ width:45%; margin:auto; text-align:center; color:#fff;}
+.itemWinnerCup{ width:100%; margin:auto; padding:10% 0 5%;}
+.share{ margin-top:5%;}
+.share ul{ list-style:none; margin:0; padding:0; margin-top:10px;}
+.share li{ width:13%; margin:0 3px; display:inline-block;}
+.option{ margin-top:5%;}
+.option ul{ list-style:none; margin:0; padding:0;}
+.option li{ width:13%; margin:0 3px; display:inline-block;}
+.singleOption li:nth-child(2), .singleOption li:nth-child(3){display:none;}
+.NoSaveOption li:nth-child(2){ display:none;}
+
+/*-- Scoreboard -- */
+.resultExtra{ width:100%; height:100%; position:absolute; margin:auto; text-align:center; color:#fff; display:none;}
+.scoreContent, .submitContent{ position:relative; background:#25C7E6; width:85%; height:90%; display:none; -webkit-border-radius: 25px;-moz-border-radius: 25px;border-radius: 25px; margin:auto; margin-top:2%;}
+.scoreTitle{ padding:2% 0;}
+ul.scoreList{ list-style:none; padding:0; margin:auto; width:90%; position:relative; height:62%;}
+ul.scoreList li{ height:8.5%; padding:.5% 2%; display: table;}
+ul.scoreList li .list{ display: table-cell;}
+ul.scoreList li:nth-child(odd) {
+	background:#32BBE0;
+}
+
+.actionScoreboard{ position:relative; width:100%; }
+.buttonBack{ width:20%; margin:auto;}
+.actionScoreboard .floatL{ position:absolute; top:0; left:5%; width:6%;}
+.actionScoreboard .floatR{ position:absolute; top:0; right:5%; width:6%;}
+.submitTitle{ padding:5% 0;}
+.submitContent .label, .submitContent input{ margin:1% 0; text-align:center;}
+.action{ width:40%; margin:3% auto;}
+.buttonSubmit{ float:left; width:48%;}
+.buttonCancelSubmit{ float:right; width:48%;}
+
+
+.fontStatus{font-family: 'Fredoka One', cursive; font-size:30px; line-height:30px; color:#fff;}
+.fontQuestion{ font-family: 'Fredoka One', cursive;}
+.fontResultScore{font-family: 'Fredoka One', cursive;}
+.fontShare{font-family: 'Fredoka One', cursive;}
+.fontCategory{font-family: 'Fredoka One', cursive;}
+.fontMessage{font-family: 'Fredoka One', cursive;}
+.fontPreload{font-family: 'Fredoka One', cursive;}
+.fontScoreTitle{font-family: 'Fredoka One', cursive;}
+.fontScoreList{font-family: 'Fredoka One', cursive;}
+.fontLabel{font-family: 'Fredoka One', cursive;}
+.fontInput{font-family: 'Fredoka One', cursive;}
+.fontSubmitTitle{font-family: 'Fredoka One', cursive;}
+
+.fontDescription{ font-family: 'Raleway', sans-serif; }
+
+/*-- Form Wrapper -- */
+#editWrapper{ display:none;}
+#floatForm{ position:fixed; left:0; top:0; z-index:100; background:#33A8CA; padding:15px; color:#FFF; width:280px; border:#fff solid 1px;}
+#floatForm{ font-size:12px;}
+#floatForm #questionWrapper, #floatForm #desriptionWrapper, #floatForm #sortWrapper, #floatForm #templateWrapper, #floatForm #backgroundWrapper, #floatForm #videoWrapper, #floatForm #categoryWrapper, #floatForm #descriptionWrapper{ background:#3BBBDE; padding:10px;}
+#floatForm .innerWrapper{ border:#fff 2px solid; padding:10px;}
+#floatForm input.button, #floatForm select.half, #floatForm label{ width:49%;}
+#floatForm .formRow{ height:25px; }
+#floatForm .extraHeight{ height:55px; }
+#floatForm .formRow input, #floatForm .formRow select{ float:right; width:48%;}
+#floatForm .formRow label{ float:left; width:48%;}
+
+#floatForm input{ width:100%; font-size:12px;}
+#floatForm textarea{ float:left; width:100%; resize:none;}
+#floatForm select, #floatForm option{ width:100%;}
+
+.editBorder .question{ outline:#fff dashed 2px;}
+.editBorder .description{ outline:#fff dashed 2px;}
+.editBorder .background{ outline:#fff dashed 2px;}
+.editBorder .buttonClick, .editBorder input{ outline:#F90 dashed 2px;}
+.editBorder #videoHolder{ outline:#fff dashed 2px;}
+
+.editBorderFocus{ animation-name: borderFocus; animation-duration: .5s; animation-iteration-count: infinite; }
+@keyframes borderFocus {
+  0% { outline:#F90 solid 4px; }
+  50% { outline:#fff solid 4px; }
+  100% { outline:#F90 solid 4px; }
+}
+
+.buttonClick{ cursor:pointer;}
+.fitImg img{ width:100%; height:auto;}
+.ignorePadding{border:none; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+
+
+@media (max-width:900px) and (orientation:portrait){
+	#questionLoaderHolder svg{ width:40%; margin:50% 42%; }
+	
+	.logo{ width:90%; margin:auto; padding-top:30%;}
+	#logoHolder .startImg{ width:50%;}
+
+	.confirmContent .message{ width:80%; height:20%; left:10%; top:20%; padding:5% 10%;}
+	.confirmContent .okImg{ width:50%; top:43%; left:25%;}
+	.confirmContent .cancelImg{ width:50%; top:57%; right:25%;}
+
+	.categoryContent ul{ padding-top:15%;}
+	.categoryContent li{ width:45%; float:left; margin:0 2.5%;}
+	.categoryContent .categoryTitle{ min-height:50px;}
+	.categoryContent .nextImg{ position:absolute; width:15%; top:85%; right:32%;}
+	.categoryContent .prevImg{ position:absolute; width:15%; top:85%; left:32%;}
+	
+	.resultContent{ width:70%;}
+	
+	.scoreContent, .submitContent{ width:90%;  margin-top:15%; height:85%;}
+	.scoreTitle{ padding:8% 0;}
+	ul.scoreList{ list-style:none; padding:0; margin:auto; width:95%; position:relative; height:62%;}
+	ul.scoreList li{ height:9%; padding:2% 2%;}
+	.buttonBack{ width:40%; margin:auto;}
+	
+	.submitTitle{ padding:15% 0;}
+	.submitContent .label, .submitContent input{ margin:2% 0;}
+	.action{ width:40%; margin:3% auto;}
+	.buttonSubmit{ float:none; width:100%; margin-bottom:2%;}
+	.buttonCancelSubmit{ float:none; width:100%;}
+	
+	#gameStatus .gameAnswer{ left:18.6%; width:60%; }
+	#gameStatus .gameDisplay{ left:18.6%; width:60%; }
+	#gameStatus .gameReveal{ bottom:10%; left:32%; width:35%; }
+	
+	.resultContent{ width:90%;}
+	.itemWinnerCup{ width:100%; padding:35% 0 10%;}
+}
+
+@media (max-width:500px) and (orientation:portrait){
+	#option{ margin:5px; margin-right:0;}
+	.buttonIcon{ width:80%;}
+	
+	#gameStatus{ margin:5px;}
+	#gameStatus .gameTotal{ width:25%;}
+	#gameStatus .gameTimer{ left:38%; width:25%;}
+}
+
+.portraitMode #gameStatus .gameAnswer{ left:18.6%; width:60%; }
+.portraitMode #gameStatus .gameDisplay{ left:18.6%; width:60%; }
+.portraitMode #gameStatus .gameReveal{ bottom:10%; left:32%; width:35%; }
+
+.portraitMode #gameStatus{ margin:5px;}
+.portraitMode #gameStatus .gameTotal{ width:25%;}
+.portraitMode #gameStatus .gameTimer{ left:38%; width:25%;}
+
+
+@-webkit-viewport{width:device-width}
+@-moz-viewport{width:device-width}
+@-ms-viewport{width:device-width}
+@-o-viewport{width:device-width}
+@viewport{width:device-width}
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+/*
+ * Image replacement
+ */
+.ir {
+background-color: transparent;
+border: 0;
+overflow: hidden;
+/* IE 6/7 fallback */
+*text-indent: -9999px;
+}
+
+.ir:before {
+content: "";
+display: block;
+width: 0;
+height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+.hidden {
+display: none !important;
+visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+.visuallyhidden {
+border: 0;
+clip: rect(0 0 0 0);
+height: 1px;
+margin: -1px;
+overflow: hidden;
+padding: 0;
+position: absolute;
+width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+.visuallyhidden.focusable:active,.visuallyhidden.focusable:focus {
+clip: auto;
+height: auto;
+margin: 0;
+overflow: visible;
+position: static;
+width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+.invisible {
+visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.clearfix:before,.clearfix:after{
+content: " "; /* 1 */
+display: table; /* 2 */
+}
+
+.clearfix:after{
+clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.clearfix{
+*zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+@media print{
+* {
+background:transparent!important;
+color:#000!important;
+box-shadow:none!important;
+text-shadow:none!important;
+}
+
+a,a:visited {
+text-decoration:underline;
+}
+
+a[href]:after {
+content:" (" attr(href) ")";
+}
+
+abbr[title]:after {
+content:" (" attr(title) ")";
+}
+
+.ir a:after,a[href^="javascript:"]:after,a[href^="#"]:after {
+content:"";
+}
+
+pre,blockquote {
+border:1px solid #999;
+page-break-inside:avoid;
+}
+
+thead {
+display:table-header-group;
+}
+
+tr,img {
+page-break-inside:avoid;
+}
+
+img {
+max-width:100%!important;
+}
+
+@page {
+margin:.5cm;
+}
+
+p,h2,h3 {
+orphans:3;
+widows:3;
+}
+
+h2,h3 {
+page-break-after:avoid;
+}
+}

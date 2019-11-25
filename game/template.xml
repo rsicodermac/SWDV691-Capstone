@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<questions>
+	<item>
+		<category/>
+		<landscape>
+			<type>Single word</type>
+			<question type="0" fontSize="120"><![CDATA[WORD]]></question>
+			<description type="text" align="center"><![CDATA[Your description here. ]]></description>
+			<background/>
+		</landscape>
+		
+		<portrait>
+			<question type="0" fontSize="70" lineHeight="70"><![CDATA[WORD]]></question>
+			<description fontSize="20" lineHeight="20"><![CDATA[Your description here. ]]>
+			</description>
+			<background/>
+		</portrait>
+	</item>
+	
+	<item>
+		<category/>
+		<landscape>
+			<type>Single word (picture)</type>
+			<question type="0" x="50" y="35"><![CDATA[HORSESHOE]]></question>
+			<description/>
+			<background width="35" left="32.5" top="48">assets/questions/horseshoe.svg</background>
+		</landscape>
+		
+		<portrait>
+			<question type="0" fontSize="50" spaceX="5" spaceY="10"><![CDATA[HORSESHOE]]></question>
+			<description/>
+			<background width="80" top="50" left="10">assets/questions/horseshoe.svg</background>
+		</portrait>
+	</item>
+	
+	<item>
+		<category/>
+		<landscape>
+			<type>Multiple word (same length)</type>
+			<question type="1"><![CDATA[GAME,MAGE,MEGA]]></question>
+			<description type="text" align="center"><![CDATA[Your description here. <br/><br/>[COMPLETE]]]></description>
+			<background/>
+		</landscape>
+		
+		<portrait>
+			<question type="1" spaceX="5" spaceY="10" bottomSpaceX="5" bottomSpaceY="10" bottomFontSize="60" bottomLineHeight="60" fontSize="70" lineHeight="70"><![CDATA[GAME,MAGE,MEGA]]></question>
+			<description type="text" top="55" align="center" fontSize="20" lineHeight="25"><![CDATA[Your description here. <br/><br/>[COMPLETE]]]></description>
+			<background/>
+		</portrait>
+	</item>
+	
+	<item>
+		<category/>
+		<landscape>
+			<type>Multiple word (different length)</type>
+			<question type="2" x="50" y="30" bottomX="50" bottomY="50">FINISH,FISH,FINS,IF,FIN</question>
+			<description type="text" align="center"><![CDATA[Your description here. <br/><br/>[COMPLETE]]]></description>
+			<background top="53" left="30" width="40">assets/item_unuse.svg</background>
+		</landscape>
+		
+		<portrait>
+			<question type="2" spaceX="5" spaceY="10" bottomSpaceX="5" bottomSpaceY="10" bottomFontSize="60" bottomLineHeight="60" x="50" y="30" bottomX="50" bottomY="45" fontSize="70" lineHeight="70">FINISH,FISH,FINS,IF,FIN</question>
+			<description type="text" top="55" align="center" fontSize="20" lineHeight="25"><![CDATA[Your description here. <br/><br/>[COMPLETE]]]></description>
+			<background top="48" left="12.5" width="75">assets/item_unuse.svg</background>
+		</portrait>
+	</item>
+	
+	<item>
+		<category/>
+		<landscape>
+			<type>Sentence</type>
+			<question type="3" shadow="10" shadowHover="15"><![CDATA[Nothing will work unless you do.]]></question>
+			<description><![CDATA[Your description here.]]></description>
+			<background/>
+		</landscape>
+		
+		<portrait>
+			<question type="3" fontSize="40" lineHeight="40" width="85" spaceX="15" spaceY="8" shadow="7" shadowHover="10"><![CDATA[Nothing will work unless you do.]]></question>
+			<description><![CDATA[Your description here.]]></description>
+			<background/>
+		</portrait>
+	</item>
+</questions>
