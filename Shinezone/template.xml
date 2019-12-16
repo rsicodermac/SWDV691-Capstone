@@ -21,15 +21,15 @@
 		<category/>
 		<landscape>
 			<type>Single word (picture)</type>
-			<question type="0" x="50" y="35"><![CDATA[HORSESHOE]]></question>
+			<question type="0" x="50" y="35"><![CDATA[WORD]]></question>
 			<description/>
-			<background width="35" left="32.5" top="48">assets/questions/horseshoe.svg</background>
+			<background width="35" left="32.5" top="48">INSERT IMAGE LOCATION</background>
 		</landscape>
 		
 		<portrait>
-			<question type="0" fontSize="50" spaceX="5" spaceY="10"><![CDATA[HORSESHOE]]></question>
+			<question type="0" fontSize="50" spaceX="5" spaceY="10"><![CDATA[WORD]]></question>
 			<description/>
-			<background width="80" top="50" left="10">assets/questions/horseshoe.svg</background>
+			<background width="80" top="50" left="10">INSERT IMAGE LOCATION</background>
 		</portrait>
 	</item>
 	
@@ -53,13 +53,13 @@
 		<category/>
 		<landscape>
 			<type>Multiple word (different length)</type>
-			<question type="2" x="50" y="30" bottomX="50" bottomY="50">FINISH,FISH,FINS,IF,FIN</question>
+			<question type="2" x="50" y="30" bottomX="50" bottomY="50"><![CDATA[ENTER WORDS SEPARATED W/ ,]]></question>
 			<description type="text" align="center"><![CDATA[Your description here. <br/><br/>[COMPLETE]]]></description>
 			<background top="53" left="30" width="40">assets/item_unuse.svg</background>
 		</landscape>
 		
 		<portrait>
-			<question type="2" spaceX="5" spaceY="10" bottomSpaceX="5" bottomSpaceY="10" bottomFontSize="60" bottomLineHeight="60" x="50" y="30" bottomX="50" bottomY="45" fontSize="70" lineHeight="70">FINISH,FISH,FINS,IF,FIN</question>
+			<question type="2" spaceX="5" spaceY="10" bottomSpaceX="5" bottomSpaceY="10" bottomFontSize="60" bottomLineHeight="60" x="50" y="30" bottomX="50" bottomY="45" fontSize="70" lineHeight="70"><![CDATA[ENTER WORDS SEPARATED W/ ,]]></question>
 			<description type="text" top="55" align="center" fontSize="20" lineHeight="25"><![CDATA[Your description here. <br/><br/>[COMPLETE]]]></description>
 			<background top="48" left="12.5" width="75">assets/item_unuse.svg</background>
 		</portrait>

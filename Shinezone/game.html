@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>ShineZone</title>
+
+    <meta name="Title" content="ShineZone" />
+    <meta name="description"
+        content="ShineZone is a capstone project. The idea is to allow students to study for upcoming exams through vocabulary and riddle gameplay">
+    <meta name="keywords" content="study, review, drag, drop, game, quiz, word, riddle">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <script>
+        if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+            var msViewportStyle = document.createElement("style");
+            msViewportStyle.appendChild(
+                document.createTextNode(
+                    "@-ms-viewport{width:device-width}"
+                )
+            );
+            document.getElementsByTagName("head")[0].
+                appendChild(msViewportStyle);
+        }
+    </script>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+</head>
+
+<body>
+    <!-- PERCENT LOADER START-->
+    <div id="mainLoader"><span>0</span></div>
+
+    <div id="mainHolder">
+        <div id="option" class="fitImg">
+            <div id="buttonOption" class="buttonClick buttonIcon buttonOptionOff"><img class="optionOff" alt="Close"
+                    src="assets/button_option_close.svg" /><img class="optionOn" alt="Option"
+                    src="assets/button_option.svg" /></div>
+            <div id="optionList" style="display:none;">
+                <div id="buttonFullscreen" class="buttonClick buttonIcon buttonFullscreen"><img alt="Fullscreen"
+                        src="assets/button_fullscreen.svg" /></div>
+                <div id="buttonSound" class="buttonClick buttonIcon buttonSound buttonSoundOn"><img class="soundOff"
+                        alt="Sound Off" src="assets/button_sound_off.svg" /><img class="soundOn" alt="Sound On"
+                        src="assets/button_sound_on.svg" /></div>
+                <div id="buttonExit" class="buttonClick buttonIcon buttonExit"><img alt="Exit"
+                        src="assets/button_exit.svg" /></div>
+
+            </div>
+        </div>
+
+        <div id="logoHolder">
+            <div class="mainContent fitImg">
+                <div id="titleHolder"></div>
+                <div id="titleFixedHolder"></div>
+                <div class="action">
+                    <div class="preloadText fontPreload resizeFont"></div>
+                    <div id="buttonStart" class="startImg buttonClick"><img alt="Begin" src="assets/button_start.svg" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="confirmHolder" class="overlayBg">
+            <div class="confirmContent">
+                <div class="message fontMessage resizeFont ignorePadding" data-fontSize="30" data-lineHeight="30">Give
+                    up? Click ok to submit defeat.</div>
+                <div id="buttonOk" class="okImg buttonClick fitImg"><img src="assets/button_ok.svg" /></div>
+                <div id="buttonCancel" class="cancelImg buttonClick fitImg"><img src="assets/button_cancel.svg" /></div>
+            </div>
+        </div>
+
+        <div id="categoryHolder">
+            <div class="categoryContent fitImg">
+                <div id="buttonNextCat" class="nextImg buttonClick fitImg"><img src="assets/button_next.svg" /></div>
+                <div id="buttonPrevCat" class="prevImg buttonClick fitImg"><img src="assets/button_prev.svg" /></div>
+                <ul id="categoryList"></ul>
+            </div>
+        </div>
+
+        <div id="gameHolder">
+            <div id="gameStatus" class="fitImg">
+                <div class="gameTotal fontStatus">
+                    <div class="gameQuestionStatus resizeFont" data-fontSize="30" data-lineHeight="30"></div>
+                    <img src=" " />
+                </div>
+                <div class="gameTimer fontStatus">
+                    <div class="gameTimerStatus resizeFont" data-fontSize="35" data-lineHeight="35"></div>
+                    <img src=" " />
+                </div>
+                <div class="gameAnswer fontStatus">
+                    <div class="gameAnswerStatus resizeFont" data-fontSize="35" data-lineHeight="35"></div>
+                    <img src="assets/item_correct.svg" />
+                </div>
+                <div class="gameDisplay fontStatus">
+                    <div class="gameDisplayStatus resizeFont" data-fontSize="35" data-lineHeight="35"></div>
+                    <img src="assets/item_correct.svg" />
+                </div>
+                <div id="buttonReveal" class="gameReveal fontStatus">
+                    <img src="assets/button_reveal.svg" />
+                </div>
+            </div>
+
+            <div id="questionLoaderHolder">
+                <svg version="1.1" id="L4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 0 0" xml:space="preserve">
+                    <circle fill="#fff" stroke="none" cx="6" cy="50" r="6">
+                        <animate attributeName="opacity" dur="1s" values="0;1;0" repeatCount="indefinite" begin="0.1">
+                        </animate>
+                    </circle>
+                    <circle fill="#fff" stroke="none" cx="26" cy="50" r="6">
+                        <animate attributeName="opacity" dur="1s" values="0;1;0" repeatCount="indefinite" begin="0.2">
+                        </animate>
+                    </circle>
+                    <circle fill="#fff" stroke="none" cx="46" cy="50" r="6">
+                        <animate attributeName="opacity" dur="1s" values="0;1;0" repeatCount="indefinite" begin="0.3">
+                        </animate>
+                    </circle>
+                </svg>
+            </div>
+
+            <div id="questionWrapperHolder">
+                <div id="questionHolder">
+
+                </div>
+
+                <div id="questionFixedHolder">
+
+                </div>
+
+                <div id="backgroundHolder">
+
+                </div>
+
+                <div id="descriptionHolder">
+
+                </div>
+            </div>
+        </div>
+
+        <div id="resultHolder">
+            <div class="resultExtra overlayBg fitImg">
+                <div class="submitContent">
+                    <div class="fontSubmitTitle resizeFont submitTitle" data-fontSize="50" data-lineHeight="50"></div>
+                    <div class="fontLabel label resizeFont">Name:</div>
+                    <input id="uName" name="uName" type="text" class="fontInput resizeFont">
+                    <div class="fontLabel label resizeFont">Email:</div>
+                    <input id="uEmail" name="uEmail" type="text" class="fontInput resizeFont">
+                    <div class="action">
+                        <div id="buttonSubmit" class="buttonSubmit buttonClick"><img src="assets/button_submit.svg" />
+                        </div>
+                        <div id="buttonCancelSubmit" class="buttonCancelSubmit buttonClick"><img
+                                src="assets/button_cancel.svg" /></div>
+                    </div>
+                </div>
+                <div class="scoreContent">
+                    <div class="fontScoreTitle resizeFont scoreTitle" data-fontSize="50" data-lineHeight="50"></div>
+                    <ul class="scoreList">
+
+                    </ul>
+                    <div class="actionScoreboard">
+                        <div id="buttonScorePrev" class="floatL buttonClick"><img src="assets/button_prev.svg" /></div>
+                        <div id="buttonBack" class="buttonBack buttonClick"><img src="assets/button_back.svg" /></div>
+                        <div id="buttonScoreNext" class="floatR buttonClick"><img src="assets/button_next.svg" /></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="resultContent fitImg">
+                <div class='itemWinnerCup'><img src="assets/item_cup.svg" /></div>
+
+                <div id='resultScore' class="fontResultScore fontScore resizeFont" data-fontSize="50"
+                    data-lineHeight="50">100</div>
+                <div class="option singleOption">
+                    <ul>
+                        <li id="buttonReplay" class="buttonClick fitImg"><img alt="Replay"
+                                src="assets/button_replay.svg" /></li>
+                        <li id="buttonSave" class="buttonClick fitImg"><img alt="Replay" src="assets/button_save.svg" />
+                        </li>
+                        <li id="buttonScore" class="buttonClick fitImg"><img alt="Replay"
+                                src="assets/button_score.svg" /></li>
+                    </ul>
+                </div>
+                <!--  <div id="shareOption" class="share">
+                        <div class="fontShare resizeFont" data-fontSize="30" data-lineHeight="30">SHARE YOUR SCORE:</div>
+                        <ul>
+                            <li id="buttonFacebook" class="buttonClick fitImg"><img alt="Facebook" src="assets/button_facebook.svg" /></li>
+                        </ul>
+                    </div>-->
+            </div>
+        </div>
+    </div>
+
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.4.min.js"><\/script>')</script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-ui.min.js"><\/script>')</script>
+
+    <script src="js/vendor/jquery.ui.touch-punch.min.js"></script>
+    <script src="js/vendor/detectmobilebrowser.js"></script>
+    <script src="js/vendor/createjs-2015.11.26.min.js"></script>
+    <script src="js/vendor/TweenMax.min.js"></script>
+
+    <script src="js/plugins.js"></script>
+    <script src="js/sound.js"></script>
+    <script src="js/score.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/loader.js"></script>
+    <script src="js/init.js"></script>
+</body>
+
+</html>

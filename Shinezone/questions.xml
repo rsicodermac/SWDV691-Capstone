@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<questions>
+	<category>
+		<thumb name="WORD GAME">assets/item_thumb_word.svg</thumb>
+		<thumb name="RIDDLE">assets/item_thumb_riddle.svg</thumb>
+	</category>
+
+	<item>
+		<category>RIDDLE</category>
+		<landscape>
+			<question type="0">BLACKBOARD</question>
+			<description>What is black when it's clean and white when it's dirty? <br/><small>Drag letters to form answer</small></description>
+			<background/>
+		</landscape>
+		
+		<portrait>
+			<question type="0" fontSize="35" lineHeight="35" spaceX="5" spaceY="10"><![CDATA[BLACKBOARD]]></question>
+			<description type="text" fontSize="20" lineHeight="23" align="center" top="60"><![CDATA[What is black when it's clean and white when it's dirty? ]]></description>
+			<background/>
+		</portrait>
+	</item>
+	
+	<item>
+		<category>RIDDLE</category>
+		<landscape>
+			<question type="0">RACECAR</question>
+			<description>What 7 letter word is spelled the same way backwards and forwards? <br/><small>Drag letters to form answer</small></description>
+			<background/>
+		</landscape>
+		
+		<portrait>
+			<question type="0" fontSize="60" lineHeight="60" spaceX="5" spaceY="10"><![CDATA[RACECAR]]></question>
+			<description type="text" fontSize="20" lineHeight="23" align="center"><![CDATA[What 7 letter word is spelled the same way backwards and forwards?]]> </description>
+			<background/>
+		</portrait>
+	</item>
+	
+	<item>
+		<category>RIDDLE</category>
+		<landscape>
+			<question type="0">WATERMELON</question>
+			<description>There was a green house. Inside the green house there was a white house. Inside the white house there was a red house. Inside the red house there were lots of babies. What is it? <br/><small>Drag letters to form answer</small></description>
+			<background/>
+		</landscape>
+		
+		<portrait>
+			<question type="0" fontSize="35" lineHeight="35" spaceX="5" spaceY="10"><![CDATA[WATERMELON]]></question>
+			<description type="text" fontSize="20" lineHeight="23" align="center" top="60"><![CDATA[There was a green house. Inside the green house there was a white house. Inside the white house there was a red house. Inside the red house there were lots of babies. What is it? ]]></description>
+			<background/>
+		</portrait>
+	</item>
+	
+	<item>
+		<category>RIDDLE</category>
+		<landscape>
+			<question type="0">PROMISE</question>
+			<description>What gets broken without being held? <br/><small>Drag letters to form answer</small></description>
+			<background/>
+		</landscape>
+		
+		<portrait>
+			<question type="0" fontSize="60" lineHeight="60" spaceX="5" spaceY="10"><![CDATA[PROMISE]]></question>
+			<description type="text" fontSize="20" lineHeight="23" align="center"><![CDATA[What gets broken without being held?]]> </description>
+			<background/>
+		</portrait>
+	</item>
+	
+	<item>
+		<category>RIDDLE</category>
+		<landscape>
+			<question type="0">DICTIONARY</question>
+			<description>Where does today come before yesterday? <br/><small>Drag letters to form answer</small></description>
+			<background/>
+		</landscape>
+		
+		<portrait>
+			<question type="0" fontSize="35" lineHeight="35" spaceX="5" spaceY="10"><![CDATA[DICTIONARY]]></question>
+			<description type="text" fontSize="20" lineHeight="23" align="center"><![CDATA[Where does today come before yesterday?]]> </description>
+			<background/>
+		</portrait>
+	</item>
+	
+	<item>
+		<category>WORD GAME</category>
+		<landscape>
+			<question type="2" x="50" y="30" bottomX="50" bottomY="50"><![CDATA[ROD,WORLD,WORD,LORD,LOW,OWL,ROW,OLD]]></question>
+			<description type="text" align="center"><![CDATA[Drag letters to form words using letters available (min. 3 letters)<br/><br/>[COMPLETE]]]></description>
+			<background top="53" left="30" width="40">assets/item_unuse.svg</background>
+		</landscape>
+		
+		<portrait>
+			<question type="2" spaceX="5" spaceY="10" bottomSpaceX="5" bottomSpaceY="10" bottomFontSize="60" bottomLineHeight="60" x="50" y="30" bottomX="50" bottomY="45" fontSize="70" lineHeight="70"><![CDATA[ROD,WORLD,WORD,LORD,LOW,OWL,ROW,OLD]]></question>
+			<description type="text" top="55" align="center" fontSize="20" lineHeight="25"><![CDATA[Drag letters to form words using letters available (min. 3 letters)<br/><br/>[COMPLETE]]]></description>
+			<background top="48" left="12.5" width="75">assets/item_unuse.svg</background>
+		</portrait>
+	</item>
+	
+	<item>
+		<category>WORD GAME</category>
+		<landscape>
+			<question type="2" x="50" y="30" bottomX="50" bottomY="50"><![CDATA[GLOW,LOG,LOW,OWL]]></question>
+			<description type="text" align="center"><![CDATA[Drag letters to form words using letters available (min. 3 letters)<br/><br/>[COMPLETE]]]></description>
+			<background top="53" left="30" width="40">assets/item_unuse.svg</background>
+		</landscape>
+		
+		<portrait>
+			<question type="2" spaceX="5" spaceY="10" bottomSpaceX="5" bottomSpaceY="10" bottomFontSize="60" bottomLineHeight="60" x="50" y="30" bottomX="50" bottomY="45" fontSize="70" lineHeight="70"><![CDATA[GLOW,LOG,LOW,OWL]]></question>
+			<description type="text" top="55" align="center" fontSize="20" lineHeight="25"><![CDATA[Drag letters to form words using letters available (min. 3 letters)<br/><br/>[COMPLETE]]]></description>
+			<background top="48" left="12.5" width="75">assets/item_unuse.svg</background>
+		</portrait>
+	</item>
+	
+	<item>
+		<category>WORD GAME</category>
+		<landscape>
+			<question type="2" x="50" y="30" bottomX="50" bottomY="50"><![CDATA[BRAVE,BARE,BEAR,RAVE,VERB,VERA,AVER]]></question>
+			<description type="text" align="center"><![CDATA[Drag letters to form words using letters available (min. 4 letters)<br/><br/>[COMPLETE]]]></description>
+			<background top="53" left="30" width="40">assets/item_unuse.svg</background>
+		</landscape>
+		
+		<portrait>
+			<question type="2" spaceX="5" spaceY="10" bottomSpaceX="5" bottomSpaceY="10" bottomFontSize="60" bottomLineHeight="60" x="50" y="30" bottomX="50" bottomY="45" fontSize="70" lineHeight="70"><![CDATA[BRAVE,BARE,BEAR,RAVE,VERB,VERA,AVER]]></question>
+			<description type="text" top="55" align="center" fontSize="20" lineHeight="25"><![CDATA[Drag letters to form words using letters available (min. 4 letters)<br/><br/>[COMPLETE]]]></description>
+			<background top="48" left="12.5" width="75">assets/item_unuse.svg</background>
+		</portrait>
+	</item>
+	
+	<item>
+		<category>WORD GAME</category>
+		<landscape>
+			<question type="2"><![CDATA[CHARM,MARCH,ARCH,CRAM,HARM,ARC,ARM,CAM,CAR,HAM,RAM]]></question>
+			<description type="text" align="center"><![CDATA[Drag letters to form words using letters available (min. 3 letters)<br/><br/>[COMPLETE]]]></description>
+			<background/>
+		</landscape>
+		
+		<portrait>
+			<question type="2" spaceX="5" spaceY="10" bottomSpaceX="5" bottomSpaceY="10" bottomFontSize="60" bottomLineHeight="60" fontSize="70" lineHeight="70"><![CDATA[CHARM,MARCH,ARCH,CRAM,HARM,ARC,ARM,CAM,CAR,HAM,RAM]]></question>
+			<description type="text" top="55" align="center" fontSize="20" lineHeight="25"><![CDATA[Drag letters to form words using letters available (min. 3 letters)<br/><br/>[COMPLETE]]]></description>
+			<background/>
+		</portrait>
+	</item>
+	
+	<item>
+		<category>WORD GAME</category>
+		<landscape>
+			<question type="1"><![CDATA[GAME,MAGE,MEGA]]></question>
+			<description type="text" align="center"><![CDATA[Drag letters to form words using letters available (min. 4 letters)<br/><br/>[COMPLETE]]]></description>
+			<background/>
+		</landscape>
+		
+		<portrait>
+			<question type="1" spaceX="5" spaceY="10" bottomSpaceX="5" bottomSpaceY="10" bottomFontSize="60" bottomLineHeight="60" fontSize="70" lineHeight="70"><![CDATA[GAME,MAGE,MEGA]]></question>
+			<description type="text" top="55" align="center" fontSize="20" lineHeight="25"><![CDATA[Drag letters to form words using letters available (min. 4 letters)<br/><br/>[COMPLETE]]]></description>
+			<background/>
+		</portrait>
+	</item>
+	
+</questions>
